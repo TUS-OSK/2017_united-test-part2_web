@@ -35,6 +35,14 @@ class BendingMachine {
 	}
 	sell(name, number, paied) {
 		if(this.stock[name] === undefined)return false;
+		if(!this.stock[name].length) {
+			alert("在庫切れです\nごめんね");
+			return this.change = paied;
+		}
+		if(this.stock[name].length < number) {
+			alert(this.stock[name].length + "個しかなかったよ…");
+			number = this.stock[name].length;
+		}
 		const supply = [];
 		for(let i = 0; i < number; i++) {
 			supply.push(this.stock[name].shift());
