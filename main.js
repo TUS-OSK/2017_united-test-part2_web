@@ -92,7 +92,8 @@ function sell() {
 }
 
 function returnChange() {
-	if(change === undefined)change = money.value;
+	// if(change === undefined)change = money.value;
+	change = money.value;
 	alert(change);
 	money.value = 0;
 	change = undefined;
