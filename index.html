@@ -6,7 +6,11 @@
 </head>
 <body>
 	<div>飲み物: <input type="text" id="drink" /></div>
-	<div>数量: <input type="number" id="number" /></div>
-	<img alt="自販機の画像" style="height: 200px;" src="http://3.bp.blogspot.com/-CGjU9gYp1LY/V3o2fXLCuzI/AAAAAAAA8HE/SovGs2dke-EWICh2sX--HlBRkyMbhryAACLcB/s800/machine_jidouhanbaiki.png" />
+	<div>water, juice, coke</div>
+	<div>数量: <input type="number" id="number" min="0" max="100" /></div>
+	<div>投入金額: <input type="number" id="money" min="0" step="10" max="10000" /></div>
+	<div><input type="button" value="おつり" onclick="returnChange();" /></div>
+	<div><a onclick="sell();"><img alt="自販機の画像" style="height: 200px;" src="http://3.bp.blogspot.com/-CGjU9gYp1LY/V3o2fXLCuzI/AAAAAAAA8HE/SovGs2dke-EWICh2sX--HlBRkyMbhryAACLcB/s800/machine_jidouhanbaiki.png" /></a></div>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
